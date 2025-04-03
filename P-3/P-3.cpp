@@ -27,7 +27,7 @@ int main()
 
     // Generate random values for the array
     for (int i = 0; i < SIZE; i++) {
-        values[i] = rand() % 6 + 1;
+        values[i] = rand() % 6 + 1; 
     }
 
     // Display the sequence and check for runs
