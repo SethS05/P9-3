@@ -14,6 +14,8 @@
 using namespace std;
 
 void displayRun(int values[], int SIZE);
+bool hasRun(int values[], int SIZE);
+
 
 int main()
 {
@@ -30,4 +32,13 @@ void displayRun(int values[], int SIZE) {
             cout << ") ";
         }
     }
+}
+
+bool hasRun(int values[], int SIZE) {
+    for (int i = 1; i < SIZE; ++i) {
+        if (values[i] == values[i - 1]) {
+            return true;
+        }
+    }
+    return false;
 }
